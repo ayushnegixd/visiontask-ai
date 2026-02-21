@@ -1,0 +1,44 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.upload-section {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.result-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.image-preview img {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.text-result pre {
+  background-color: #f4f4f4;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: left;
+  white-space: pre-wrap;
+  color: #333; 
+}
+
+.error {
+  color: red;
+}

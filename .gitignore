@@ -1,0 +1,11 @@
+# Dependency directories
+node_modules/
+
+# Mac specific hidden files
+.DS_Store
+
+# Build outputs
+client/dist/
+
+# Security (Wildcard for all env files)
+**/.env

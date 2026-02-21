@@ -1,4 +1,4 @@
-# 🚀 VisionTask AI: Smart Image-to-Code Dashboard
+# 🚀 VisionTask AI: Cognitive Image-to-Data Pipeline
 
 **VisionTask AI** is an enterprise-grade MERN stack application designed to bridge the gap between visual content and actionable digital data. Leveraging **Google Gemini 2.5 Flash**, the platform performs deep semantic analysis on images to extract complex code, technical documentation, and creative descriptions, storing them in a secure, high-performance dashboard.
 

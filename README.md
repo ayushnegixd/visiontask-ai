@@ -1,19 +1,21 @@
 # 🚀 VisionTask AI: Smart Image-to-Code Dashboard
 
-**VisionTask AI** is a professional MERN stack application designed to bridge the gap between visual content and digital data. Using **Google Gemini 2.5 Flash**, the app analyzes images to extract complex images, technical documentation, or detailed creative descriptions and stores them in a secure, searchable dashboard.
+**VisionTask AI** is an enterprise-grade MERN stack application designed to bridge the gap between visual content and actionable digital data. Leveraging **Google Gemini 2.5 Flash**, the platform performs deep semantic analysis on images to extract complex code, technical documentation, and creative descriptions, storing them in a secure, high-performance dashboard.
 
 ---
 
 ## ✨ Core Features
 
-* **AI OCR & Analysis**: Powered by Gemini 2.5 Flash to accurately transcribe images, code and describe visual elements from images.
-* **Secure Infrastructure**: Accomplished a 100% clean security audit by implementing Advanced Credential Masking and Automated Secret Filtering to ensure production keys are never exposed in the version history.
-* **MERN Architecture**: 
-    * **MongoDB Atlas**: Distributed cloud database for reliable data storage.
-    * **Express & Node.js**: High-performance backend API handling.
-    * **React**: Interactive, responsive dashboard for viewing extracted data.
-* **Cloudinary Integration**: Automated image hosting and optimization.
-* **JWT Authentication**: Secure user sessions and data privacy.
+* **AI-Driven Semantic Analysis**: Powered by Gemini 2.5 Flash for high-fidelity extraction of code, text, and visual context from any image.
+* **Verified Zero-Leak Architecture**: Accomplished a 100% clean security audit by implementing **Advanced Credential Masking** and **Automated Secret Filtering** to ensure production keys are never exposed in version history.
+* **Portable Document Generation**: Integrated an automated **PDF Export Module** that compiles analyzed text and original images into professional, shareable documents.
+* **One-Click Clipboard Synchronization**: High-speed **Dynamic Copy-to-Clipboard** engine for instant retrieval of AI-extracted snippets.
+* **MERN Infrastructure**: 
+    * **MongoDB Atlas**: Distributed cloud database for resilient data persistence.
+    * **Express & Node.js**: High-concurrency backend API architecture.
+    * **React**: Modern, reactive dashboard for real-time data visualization.
+* **Cloudinary Integration**: Optimized automated image hosting and global CDN delivery.
+* **JWT Authentication**: Advanced session management and end-to-end data privacy.
 
 ---
 
@@ -25,7 +27,8 @@
 | **Backend** | Node.js, Express.js |
 | **Database** | MongoDB Atlas (NoSQL) |
 | **AI Engine** | Google Gemini 2.5 Flash API |
-| **Media Storage** | Cloudinary |
+| **Media Storage** | Cloudinary API |
+| **Document Logic** | jsPDF / html2canvas |
 | **Security** | JWT, Bcrypt, Dotenv |
 
 ---

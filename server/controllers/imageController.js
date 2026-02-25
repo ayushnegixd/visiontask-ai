@@ -1,5 +1,5 @@
 const Screenshot = require('../models/Screenshot');
-const analyzeImage = require('../utils/aiHandler');
+const analyzeImage = require('../Utils/aiHandler');
 const { cloudinary } = require('../config/cloudinary');
 const fs = require('fs');
 

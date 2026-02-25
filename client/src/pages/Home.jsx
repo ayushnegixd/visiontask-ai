@@ -53,7 +53,7 @@ function Home() {
         },
       };
 
-      await axios.post('http://localhost:3000/api/screenshots/upload', formData, config);
+      await axios.post(`${import.meta.env.VITE_API_URL}/api/screenshots/upload`, formData, config);
       await new Promise(resolve => setTimeout(resolve, 500));
       navigate('/dashboard');
     } catch (err) {

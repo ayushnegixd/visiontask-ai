@@ -45,10 +45,10 @@ const ScreenshotUpload = ({ onUploadSuccess }) => {
         },
       };
 
-      const res = await axios.post('http://localhost:3000/api/screenshots/upload', formData, config);
+      const res = await axios.post(`${import.meta.env.VITE_API_URL}/api/screenshots/upload`, formData, config);
 
       setExtractedText(res.data.extractedText);
-      setImageUrl(`http://localhost:3000${res.data.imageUrl}`);
+      setImageUrl(`${import.meta.env.VITE_API_URL}${res.data.imageUrl}`);
 
       if (onUploadSuccess) {
         onUploadSuccess();

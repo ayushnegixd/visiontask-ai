@@ -1,7 +1,7 @@
 import { create } from 'zustand';
 import axios from 'axios';
 
-const API_URL = 'http://localhost:3000/api/users/';
+const API_URL = `${import.meta.env.VITE_API_URL}/api/users/`;
 
 // Check if user is in local storage
 const user = JSON.parse(localStorage.getItem('user'));

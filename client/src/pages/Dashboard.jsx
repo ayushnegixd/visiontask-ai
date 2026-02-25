@@ -31,7 +31,7 @@ const Dashboard = () => {
       };
 
       const response = await axios.get(
-        'http://localhost:3000/api/screenshots/history',
+        `${import.meta.env.VITE_API_URL}/api/screenshots/history`,
         config
       );
 
@@ -84,7 +84,7 @@ const Dashboard = () => {
         },
       };
 
-      const response = await axios.post('http://localhost:3000/api/screenshots/upload', formData, config);
+      const response = await axios.post(`${import.meta.env.VITE_API_URL}/api/screenshots/upload`, formData, config);
       setScreenshots(prev => [response.data, ...prev]);
     } catch (err) {
       console.error('Upload failed:', err);
@@ -108,7 +108,7 @@ const Dashboard = () => {
 
   const confirmDelete = async (id) => {
     try {
-      await axios.delete(`http://localhost:3000/api/screenshots/${id}`, {
+      await axios.delete(`${import.meta.env.VITE_API_URL}/api/screenshots/${id}`, {
         headers: {
           Authorization: `Bearer ${user.token}`,
         },
@@ -129,7 +129,7 @@ const Dashboard = () => {
 
   const updateScreenshot = async (id, updates) => {
     try {
-      const response = await axios.put(`http://localhost:3000/api/screenshots/${id}`, updates, {
+      const response = await axios.put(`${import.meta.env.VITE_API_URL}/api/screenshots/${id}`, updates, {
         headers: {
           Authorization: `Bearer ${user.token}`,
         },
@@ -418,7 +418,7 @@ const Dashboard = () => {
 
 const ImageWithLoader = ({ src, alt }) => {
   const [loaded, setLoaded] = useState(false);
-  const imageSrc = src.startsWith('http') ? src : `http://localhost:3000${src}`;
+  const imageSrc = src.startsWith('http') ? src : `${import.meta.env.VITE_API_URL}${src}`;
 
   return (
     <>
